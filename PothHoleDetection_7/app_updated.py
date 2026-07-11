@@ -116,8 +116,8 @@ def load_yolo_model():
     Uses CUDA backend if available, otherwise falls back to CPU.
     """
     import os
-    BASE_DIR = os.path.dirname(os.path,abspath(__file__))
-    weights_path = os.path.join(BASE_DIR,yolov4_tiny.weights)
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    weights_path = os.path.join(BASE_DIR.yolov4_tiny.weights)
     cfg_path = os.path.join(BASE_DIR, 'utils', 'yolov4_tiny.cfg')
 
 
