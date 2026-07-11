@@ -1,0 +1,3 @@
+Location: [27.1833, 78.0167], Bounding Box: [759 166 426 342], Severity: High
+
+Total Pothole Area: 145692 pixels

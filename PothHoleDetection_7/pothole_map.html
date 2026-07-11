@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_23da5dcc2cb02fed2f8b4700b550bd7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_23da5dcc2cb02fed2f8b4700b550bd7a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_23da5dcc2cb02fed2f8b4700b550bd7a = L.map(
+                "map_23da5dcc2cb02fed2f8b4700b550bd7a",
+                {
+                    center: [27.81355, 78.57595],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56f260c2d18412073c0dca84ccecf221 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_56f260c2d18412073c0dca84ccecf221.addTo(map_23da5dcc2cb02fed2f8b4700b550bd7a);
+        
+    
+            var marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_bba3d35b79d0099b5d1cb1b37dc1d260 = L.marker(
+                [27.8815, 78.0746],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_334f2fc3e8aa46658893667bb06211e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dce682066be8144acddb607670684408 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4bb6acaf5f95ca37d689b137146110dc = $(`<div id="html_4bb6acaf5f95ca37d689b137146110dc" style="width: 100.0%; height: 100.0%;">         <b>Pothole #1</b><br>         Latitude: 27.8815<br>         Longitude: 78.0746<br>         Severity: High         <br>Area: 64963 pixels</div>`)[0];
+                popup_dce682066be8144acddb607670684408.setContent(html_4bb6acaf5f95ca37d689b137146110dc);
+            
+        
+
+        marker_bba3d35b79d0099b5d1cb1b37dc1d260.bindPopup(popup_dce682066be8144acddb607670684408)
+        ;
+
+        
+    
+    
+                marker_bba3d35b79d0099b5d1cb1b37dc1d260.setIcon(icon_334f2fc3e8aa46658893667bb06211e6);
+            
+    
+            var marker_8d3589cf2e3fef47f2c8c8d1ce099bfc = L.marker(
+                [27.8815, 78.0746],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_9a25eb1dd8664d3417e5f76fbea745ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15e21c0d5b5dc072ede0a1b9495706cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20debf54118afcb8afecfaa18bdb7f9c = $(`<div id="html_20debf54118afcb8afecfaa18bdb7f9c" style="width: 100.0%; height: 100.0%;">         <b>Pothole #2</b><br>         Latitude: 27.8815<br>         Longitude: 78.0746<br>         Severity: Medium         <br>Area: 4807 pixels</div>`)[0];
+                popup_15e21c0d5b5dc072ede0a1b9495706cb.setContent(html_20debf54118afcb8afecfaa18bdb7f9c);
+            
+        
+
+        marker_8d3589cf2e3fef47f2c8c8d1ce099bfc.bindPopup(popup_15e21c0d5b5dc072ede0a1b9495706cb)
+        ;
+
+        
+    
+    
+                marker_8d3589cf2e3fef47f2c8c8d1ce099bfc.setIcon(icon_9a25eb1dd8664d3417e5f76fbea745ed);
+            
+    
+            var marker_8232b790c0efa2609d492ea28fc06ab0 = L.marker(
+                [27.8815, 78.0746],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_fd138c12faf69596450fa20ede9ddee4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ede1ff9f2aba5354d52adbb377719dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95e228c26605485e858af1b2d30ad13e = $(`<div id="html_95e228c26605485e858af1b2d30ad13e" style="width: 100.0%; height: 100.0%;">         <b>Pothole #3</b><br>         Latitude: 27.8815<br>         Longitude: 78.0746<br>         Severity: High         <br>Area: 26418 pixels</div>`)[0];
+                popup_7ede1ff9f2aba5354d52adbb377719dc.setContent(html_95e228c26605485e858af1b2d30ad13e);
+            
+        
+
+        marker_8232b790c0efa2609d492ea28fc06ab0.bindPopup(popup_7ede1ff9f2aba5354d52adbb377719dc)
+        ;
+
+        
+    
+    
+                marker_8232b790c0efa2609d492ea28fc06ab0.setIcon(icon_fd138c12faf69596450fa20ede9ddee4);
+            
+    
+            var marker_a25db19291d541aa55be3661e9f38303 = L.marker(
+                [27.8815, 78.0746],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_03e972dd10e94612831a50fd886f8fc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_538f208aeed8615db1d1b0d76bcff731 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e07548c7c5ad1ff6e827d0e9daf74cd = $(`<div id="html_5e07548c7c5ad1ff6e827d0e9daf74cd" style="width: 100.0%; height: 100.0%;">         <b>Pothole #4</b><br>         Latitude: 27.8815<br>         Longitude: 78.0746<br>         Severity: High         <br>Area: 11607 pixels</div>`)[0];
+                popup_538f208aeed8615db1d1b0d76bcff731.setContent(html_5e07548c7c5ad1ff6e827d0e9daf74cd);
+            
+        
+
+        marker_a25db19291d541aa55be3661e9f38303.bindPopup(popup_538f208aeed8615db1d1b0d76bcff731)
+        ;
+
+        
+    
+    
+                marker_a25db19291d541aa55be3661e9f38303.setIcon(icon_03e972dd10e94612831a50fd886f8fc0);
+            
+    
+            var marker_34fe6a300a77ccef6e37947b6a28b3fd = L.marker(
+                [28.6519, 77.2315],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_6a4ce993c61ce9c9183a647d6adaa6f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21d464c43f7e542cb1cdc75335b0034c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_910255bed0db6cc05a7886d0fde7ec43 = $(`<div id="html_910255bed0db6cc05a7886d0fde7ec43" style="width: 100.0%; height: 100.0%;">         <b>Pothole #5</b><br>         Latitude: 28.6519<br>         Longitude: 77.2315<br>         Severity: High         <br>Area: 63690 pixels</div>`)[0];
+                popup_21d464c43f7e542cb1cdc75335b0034c.setContent(html_910255bed0db6cc05a7886d0fde7ec43);
+            
+        
+
+        marker_34fe6a300a77ccef6e37947b6a28b3fd.bindPopup(popup_21d464c43f7e542cb1cdc75335b0034c)
+        ;
+
+        
+    
+    
+                marker_34fe6a300a77ccef6e37947b6a28b3fd.setIcon(icon_6a4ce993c61ce9c9183a647d6adaa6f2);
+            
+    
+            var marker_cc2ac8cf509da9169dc739ff830f7568 = L.marker(
+                [28.6519, 77.2315],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_173ad3b3724cddb1fd871ee7e9e9bfe1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de4e6a58d57df7cb9e3760b85f5cf43b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c925d152ae18251589e0bad69bbaac42 = $(`<div id="html_c925d152ae18251589e0bad69bbaac42" style="width: 100.0%; height: 100.0%;">         <b>Pothole #6</b><br>         Latitude: 28.6519<br>         Longitude: 77.2315<br>         Severity: Low         <br>Area: 1440 pixels</div>`)[0];
+                popup_de4e6a58d57df7cb9e3760b85f5cf43b.setContent(html_c925d152ae18251589e0bad69bbaac42);
+            
+        
+
+        marker_cc2ac8cf509da9169dc739ff830f7568.bindPopup(popup_de4e6a58d57df7cb9e3760b85f5cf43b)
+        ;
+
+        
+    
+    
+                marker_cc2ac8cf509da9169dc739ff830f7568.setIcon(icon_173ad3b3724cddb1fd871ee7e9e9bfe1);
+            
+    
+            var marker_f74b4938ab8e02f6952c38f28fd7310b = L.marker(
+                [26.8393, 80.9231],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_bf6a0afba08736548a207d5bf5f23d4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6906dffa9753c88d5b8fbe1f349b14ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_921693bc50c2ac6a2d499e4301be7d0d = $(`<div id="html_921693bc50c2ac6a2d499e4301be7d0d" style="width: 100.0%; height: 100.0%;">         <b>Pothole #7</b><br>         Latitude: 26.8393<br>         Longitude: 80.9231<br>         Severity: High         <br>Area: 143856 pixels</div>`)[0];
+                popup_6906dffa9753c88d5b8fbe1f349b14ee.setContent(html_921693bc50c2ac6a2d499e4301be7d0d);
+            
+        
+
+        marker_f74b4938ab8e02f6952c38f28fd7310b.bindPopup(popup_6906dffa9753c88d5b8fbe1f349b14ee)
+        ;
+
+        
+    
+    
+                marker_f74b4938ab8e02f6952c38f28fd7310b.setIcon(icon_bf6a0afba08736548a207d5bf5f23d4a);
+            
+    
+            var marker_870a81bb6d69f11d703b0e859349489c = L.marker(
+                [26.8393, 80.9231],
+                {
+}
+            ).addTo(marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d);
+        
+    
+            var icon_875c8d0f3dadf429e5b735dd2211ec22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c675a19fe123bfb727cdea093ea3b9a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cfc1d0833d324274619f0306cf7a5e6 = $(`<div id="html_8cfc1d0833d324274619f0306cf7a5e6" style="width: 100.0%; height: 100.0%;">         <b>Pothole #8</b><br>         Latitude: 26.8393<br>         Longitude: 80.9231<br>         Severity: High         <br>Area: 143856 pixels</div>`)[0];
+                popup_c675a19fe123bfb727cdea093ea3b9a6.setContent(html_8cfc1d0833d324274619f0306cf7a5e6);
+            
+        
+
+        marker_870a81bb6d69f11d703b0e859349489c.bindPopup(popup_c675a19fe123bfb727cdea093ea3b9a6)
+        ;
+
+        
+    
+    
+                marker_870a81bb6d69f11d703b0e859349489c.setIcon(icon_875c8d0f3dadf429e5b735dd2211ec22);
+            
+    
+            marker_cluster_fd49fbf28d119e27dbb5c1f35fe1720d.addTo(map_23da5dcc2cb02fed2f8b4700b550bd7a);
+        
+</script>
+</html>
