@@ -117,10 +117,8 @@ def load_yolo_model():
     """
     import os
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    weights_path = os.path.join(BASE_DIR.yolov4_tiny.weights)
+    weights_path = os.path.join(BASE_DIR, 'utils', 'yolov4_tiny.weights')
     cfg_path = os.path.join(BASE_DIR, 'utils', 'yolov4_tiny.cfg')
-
-
     net = cv.dnn.readNet(weights_path, cfg_path)
 
     use_cuda = False
