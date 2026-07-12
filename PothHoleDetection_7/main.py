@@ -19,11 +19,14 @@ if uploaded_file is not None:
     frame = np.array(image)
     
     # Ensure output directory exists
-    result_path = "pothole_coordinates"
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    result_path = os.path.join(BASE_DIR, "pothole_coordinates")
     os.makedirs(result_path, exist_ok=True)
 
     # Load YOLO model
-    net = cv.dnn.readNet(r'utils/yolov4_tiny.weights', r'utils/yolov4_tiny.cfg')
+    weights_path = os.path.join(BASE_DIR, 'utils', 'yolov4_tiny.weights')
+    cfg_path = os.path.join(BASE_DIR, 'utils', 'yolov4_tiny.cfg')
+    net = cv.dnn.readNet(weights_path, cfg_path)
     
     # Check if CUDA is available in OpenCV
     use_cuda = False

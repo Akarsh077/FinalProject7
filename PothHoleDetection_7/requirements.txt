@@ -1,4 +1,8 @@
-opencv-python-headless==4.10.0.84
+opencv-python-headless
 pillow
 geocoder
 folium
+streamlit-geolocation
+pandas
+numpy
+requests
